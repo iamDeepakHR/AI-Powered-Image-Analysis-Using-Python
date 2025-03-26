@@ -1,36 +1,73 @@
 # **Gemini Image Analysis Using Streamlit**
 
-This project is a **Streamlit-based AI-powered image analysis tool** utilizing Google's **Gemini API** (Generative AI) to analyze and generate insights from uploaded images. The chatbot provides a **user-friendly interface** for seamless interaction with AI-powered image interpretation.
+This project leverages **Google's Gemini API** to perform **AI-powered image analysis** within a **Streamlit** web application. Users can upload images and receive AI-generated insights based on their queries.
+
+---
+
+## **Table of Contents**
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [Technology Stack](#technology-stack)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
+
+---
+
+## **Project Overview**
+
+The **Gemini Image Analysis System** integrates **Google's Generative AI** to analyze images and generate insights based on user prompts. The application provides a seamless **user interface** through **Streamlit**, making AI-powered image interpretation **accessible and intuitive**.
 
 ---
 
 ## **Features**
-✅ AI-powered image analysis using Google's Gemini API  
-✅ User-friendly Streamlit UI  
-✅ Supports multiple image formats (`JPG`, `JPEG`, `PNG`)  
-✅ Real-time response generation  
-✅ Secure API key management with `.env`  
-✅ Efficient error handling and robust exception handling  
+
+- **AI-Powered Image Analysis**: Uses Google's **Gemini API** for advanced image insights.
+- **Multiple Image Formats Supported**: Works with `JPG`, `JPEG`, and `PNG`.
+- **Real-Time AI Responses**: Generates instant insights based on user queries.
+- **Interactive and User-Friendly UI**: Streamlit-based interface for seamless interaction.
+- **Secure API Key Management**: Uses `.env` files to store API keys securely.
+- **Error Handling and Robust Processing**: Ensures smooth operation with efficient exception handling.
 
 ---
 
-## **Installation and Setup**
+## **Technology Stack**
 
-### **1️⃣ Create a Virtual Environment (Recommended)**
+- **Frontend**:
+  - **Streamlit** (for UI and interaction)
+  - **Pillow** (for image processing)
+  
+- **Backend**:
+  - **Google Generative AI (Gemini API)** (for AI-driven insights)
+  - **Python** (for processing and integration)
+  - **dotenv** (for environment variable management)
+
+---
+
+## **Installation**
+
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/iamDeepakHR/Gemini-Image-Analysis.git
+cd Gemini-Image-Analysis
+```
+
+### **2️⃣ Create a Virtual Environment**
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Mac/Linux
 venv\Scripts\activate     # On Windows
 ```
 
-### **2️⃣ Install Dependencies**
+### **3️⃣ Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-### **3️⃣ Configure API Key**
+### **4️⃣ Configure API Key**
 1. **Create a `.env` file** in the project directory.
-2. Add the following line and replace with your actual API key:
+2. Add the following line and replace it with your actual API key:
    ```
    GENAI_API_KEY=YOUR_API_KEY
    ```
@@ -47,13 +84,13 @@ streamlit run app.py
 ### **How to Use**
 1️⃣ Upload an image (`JPG`, `JPEG`, or `PNG`).  
 2️⃣ Enter a description or query about the image.  
-3️⃣ Click **Analyze Image** to get AI-generated insights.  
+3️⃣ Click **Analyze Image** to receive AI-generated insights.  
 
 ---
 
 ## **Project Structure**
 ```
-📂 gemini-image-analysis
+📂 Gemini-Image-Analysis
 │-- 📜 app.py            # Main Streamlit App
 │-- 📜 requirements.txt  # Project dependencies
 │-- 📜 .env              # API Key (Not to be shared)
@@ -62,29 +99,19 @@ streamlit run app.py
 
 ---
 
-## **Dependencies**
-- **Streamlit** - Web UI framework  
-- **Google Generative AI (Gemini API)** - AI model for image analysis  
-- **Pillow** - Image processing  
-- **dotenv** - Environment variable management  
-
-Install them using:  
-```bash
-pip install streamlit google-generativeai pillow python-dotenv
-```
-
----
-
 ## **Contributing**
-Want to improve this project? Contributions are welcome!  
-- Fork the repository  
-- Create a new branch (`feature-new-feature`)  
-- Commit changes and open a pull request  
+We welcome contributions to enhance the project. If you would like to contribute:
+
+1. **Fork the repository**.
+2. **Create a new branch** (`git checkout -b feature-name`).
+3. **Make your changes and commit them** (`git commit -m 'Add feature'`).
+4. **Push to your forked repository** (`git push origin feature-name`).
+5. **Submit a pull request** for review.
 
 ---
 
 ## **License**
-This project is open-source under the **MIT License**.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details..
 
 ---
 
