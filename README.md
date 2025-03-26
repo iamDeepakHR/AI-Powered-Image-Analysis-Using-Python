@@ -49,8 +49,8 @@ The **Gemini Image Analysis System** integrates **Google's Generative AI** to an
 
 ### **1️⃣ Clone the Repository**
 ```bash
-git clone https://github.com/iamDeepakHR/Gemini-Image-Analysis.git
-cd Gemini-Image-Analysis
+git clone https://github.com/iamDeepakHR/AI-Powered-Image-Analysis-Using-Python.git
+cd AI-Powered-Image-Analysis-Using-Python
 ```
 
 ### **2️⃣ Create a Virtual Environment**
