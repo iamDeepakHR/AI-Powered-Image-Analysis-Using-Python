@@ -21,9 +21,6 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 # Function to get Gemini response for image analysis
 def get_gemini_response(input_text, image):
     try:
-        if not input_text.strip():
-            return "Please provide a valid input prompt."
-        
         # Convert PIL image to bytes
         img_bytes = image.convert("RGB")
         
@@ -49,7 +46,7 @@ uploaded_file = st.file_uploader("Upload an Image:", type=["jpg", "jpeg", "png"]
 if uploaded_file is not None:
     # Display the uploaded image
     image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image:", use_container_width=True)
+    st.image(image, caption="Uploaded Image:", width=500)
 
     # Button to analyze the image
     if st.button("Analyze Image"):
