@@ -3,7 +3,9 @@
 This project leverages **Google's Gemini API** to perform **AI-powered image analysis** within a **Streamlit** web application. Users can upload images and receive AI-generated insights based on their queries.
 
 ---
+🌐 **Live Demo**: [Click here to try the NexLens Image Analysis](https://ai-nexlens.onrender.com/)
 
+---
 ## **Table of Contents**
 1. [Project Overview](#project-overview)
 2. [Features](#features)
