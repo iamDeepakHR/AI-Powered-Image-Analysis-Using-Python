@@ -51,27 +51,6 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
-# Input section
-st.header("🧠 NexLens Computer Vision Application")
-
-input_prompt = st.text_input("📝 Input Prompt:", key="input", placeholder="Describe what you want to know about the image.")
-uploaded_file = st.file_uploader("📁 Upload an Image:", type=["jpg", "jpeg", "png"])
-
-# Optional: Display uploaded image in small size
-if uploaded_file is not None:
-    image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image", width=300)
-
-
-    # Button to analyze the image
-    if st.button("Analyze Image"):
-        with st.spinner("Analyzing the image..."):
-            response = get_gemini_response(input_prompt, image)
-        
-        # Display the response
-        st.subheader("Analysis Result:")
-        st.write(response)
 st.markdown("""
     <style>
         .footer {
@@ -95,3 +74,23 @@ st.markdown("""
         NexLens Image Analysis by <b>Deepak Gowda H R</b>, Mandya Technologies Ltd, Mandya, Karnataka, India • Copyright © 2025
     </div>
 """, unsafe_allow_html=True)
+# Input section
+st.header("🧠 NexLens Computer Vision Application")
+
+input_prompt = st.text_input("📝 Input Prompt:", key="input", placeholder="Describe what you want to know about the image.")
+uploaded_file = st.file_uploader("📁 Upload an Image:", type=["jpg", "jpeg", "png"])
+
+# Optional: Display uploaded image in small size
+if uploaded_file is not None:
+    image = Image.open(uploaded_file)
+    st.image(image, caption="Uploaded Image", width=300)
+
+
+    # Button to analyze the image
+    if st.button("Analyze Image"):
+        with st.spinner("Analyzing the image..."):
+            response = get_gemini_response(input_prompt, image)
+        
+        # Display the response
+        st.subheader("Analysis Result:")
+        st.write(response)
